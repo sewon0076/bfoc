@@ -1,0 +1,619 @@
+@import url(common/reset.css);
+@import url(common.css);
+
+/* 메인시작 */
+
+/* 섹션1 축제소개 컨텐츠 및 포스터 섹션 */
+.festival > .section1 {
+    background-color: #f3f2ee;
+}
+
+.sec_wrap.sec1_festival {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+}
+
+/* 왼쪽 포스터 내용 */
+.festival .sec1_cont {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    justify-content: space-between;
+}
+
+/* 가운데 줄 */
+.festival .sec1_cont_line {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+/* 오른쪽 포스터 */
+
+.festival .poster_img {
+    width: 470px;
+    height: 700px;
+    background-image: url(../img/busan-posster-festival.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/* 모바일 플러스 버튼 */
+.festival .m_plus_wrap {
+    display: none;
+    box-sizing: border-box;
+    margin: 25px auto;
+}
+
+/* 모바일 메인 텍스트 */
+.festival .m_sec1_cont_maintxt {
+    height: 0;
+    opacity: 0;
+    transition: height 0.4s ease-in-out, opacity 1s ease-in-out;
+}
+
+.festival .m_sec1_cont_maintxt.m_sec1_cont_maintxt_on {
+    height: 450px;
+    opacity: 1;
+}
+.festival .m_sec1_cont_maintxt > h3 {
+    margin: 50px 0 20px;
+}
+
+/* 섹션 2 축제 프로그램 안내 */
+.festival > .section2 {
+    background-color: #0c0c0c;
+}
+
+.festival .sec2_addi_tit {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.festival .subTitle {
+    justify-content: center;
+}
+
+/* 축제프로그램 안내 콘텐츠 스와이퍼 */
+.fes_info_cont_wrap {
+    position: relative;
+    margin-top: 100px;
+}
+.fes_info_cont_wrap .swiper-slide {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: top;
+    width: 100%;
+}
+.fes_info_cont_wrap .swiper-slide > div {
+    width: calc(50% - 25px);
+}
+/* .mySwiper_fes_info {
+    width: 55%;
+} */
+
+.fes_info_bg {
+    height: 500px;
+    box-sizing: border-box;
+}
+
+.f_i_bg1 {
+    background-color: #fff;
+}
+
+.f_i_bg2 {
+    background-color: red;
+}
+
+.f_i_bg3 {
+    background-color: #fff;
+}
+
+.f_i_txt_wrap > li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.f_i_txt_wrap > li:nth-child(1) {
+    margin: 0 0 20px;
+}
+
+.sub_cate + h4 {
+    width: calc(100% - 145px);
+    color: #f3f2ee;
+}
+.sub_cate + p {
+    width: calc(100% - 145px);
+    color: #0c0c0c;
+}
+
+/* 모바일 텍스트 */
+.m_f_i_contxt {
+    display: none;
+}
+
+/* 스와이퍼 버튼 */
+.fes_info_swi_btn_wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 250px;
+    transform: translateY(-25%);
+}
+
+.fes_info_swi_btn_wrap > div {
+    width: fit-content;
+}
+
+.f_i_prev {
+    transform: translateX(-150%) scale(0.8) rotate(180deg);
+}
+.f_i_next {
+    transform: translateX(150%) scale(0.8);
+}
+
+/* 섹션3 축제위치 섹션 */
+.festival > .section3 {
+    background-color: #f3f2ee;
+}
+
+.fes_loca_cont_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.fes_loca_map {
+    width: calc(50% - 25px);
+}
+.fes_loca_map>.loca_map_bg{
+    width: 100%;
+    padding-top: 92.982%;
+}
+
+.fes_location_info {
+    width: calc(50% - 25px);
+    display: flex;
+    flex-direction: column;
+}
+
+.fes_location_info > li {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+.fes_location_info > li.fes_loca_bus {
+    padding-top: 0;
+}
+/* .festival .sub_cate {
+    width: 125px;
+    padding: 0;
+} */
+
+/* ================================ */
+.festival .section4 {
+    background-color: #0c0c0c;
+}
+.selections {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.selections > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.select1 > div:nth-child(1) {
+    background-color: #ee4b3c;
+}
+.select2 > div:nth-child(1) {
+    background-color: #f9b6b0;
+}
+.select3 > div:nth-child(1) {
+    background-color: #1874c1;
+}
+.select_box {
+    position: relative;
+    width: 300px;
+    height: 60px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    /* border: 2px solid #; */
+    background-color: #f3f2ee;
+    cursor: pointer;
+}
+
+.select_arrow {
+    display: block;
+    width: 10px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    background-image: url(../img/arrow_next.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+}
+
+.select_box .label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+    border: 0 none;
+    outline: 0 none;
+    /* padding-left: 15px; */
+    background: transparent;
+    cursor: pointer;
+}
+
+.label + .optionList {
+    position: absolute;
+    top: 59px;
+    left: 0;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    max-height: 0;
+    /* transition: 0.3s ease-in; */
+}
+
+.label.active + .optionList.active {
+    max-height: 500px;
+    z-index: 200;
+}
+
+.select_box .optionItem {
+    border-bottom: 1px #0c0c0c;
+    padding: 5px 15px;
+    line-height: 2.5;
+    transition: 0.1s;
+    background: #f3f2ee;
+    /* background: rgba(243, 242, 238, 0.6); */
+    font-weight: bold;
+}
+
+.select_box .optionItem:nth-child(1) {
+    color: #ee4b3c;
+}
+.select_box .optionItem:nth-child(2) {
+    color: #f9b6b0;
+}
+.select_box .optionItem:nth-child(3) {
+    color: #1874c1;
+}
+.select_box .optionItem:nth-child(4) {
+    color: #ffbc16;
+}
+.select_box .optionItem:nth-child(5) {
+    color: #1ea849;
+}
+.select_box .optionItem:nth-child(6) {
+    color: #ee4b3c;
+}
+
+.select_box .optionItem:hover {
+    background: #0c0c0c;
+}
+
+.select_box .optionItem:last-child {
+    border-bottom: 0 none;
+}
+
+.select_box input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    background: transparent;
+}
+.select_box input:focus {
+    outline: none;
+}
+.select4 {
+    margin: 0 auto 10px;
+    width: 100%;
+    max-width: 450px;
+}
+.select4 .reserve {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #f3f2ee;
+    box-sizing: border-box;
+}
+.select4 > .reserve > h4 {
+    width: 100%;
+}
+.sec_wrap > .selections .popup_wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 10px 10px 1px rgba(0, 0, 0, 0.3);
+    z-index: 1500;
+}
+.sec_wrap > .selections .popup_wrap.active {
+    display: flex;
+}
+.popup {
+    width: 800px;
+    height: 400px;
+    background-color: #f3f2ee;
+    padding: 50px;
+    box-sizing: border-box;
+    position: relative;
+}
+.popup_close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ee4b3c;
+    padding: 5px;
+    box-sizing: border-box;
+    transform: rotate(45deg);
+}
+.popup_close > span {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #f3f2ee;
+}
+.popup_close > span:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+.popup_close > span:nth-child(2) {
+    transform: rotate(90deg) translateX(-7%);
+    top: 50%;
+}
+.popup .subTitle {
+    transform: translateY(20%);
+    gap: 15px;
+}
+.popup_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.popup h3 {
+    text-align: center;
+    font-weight: 700;
+}
+.popup .notice_btn {
+    border: 1px solid #0c0c0c;
+}
+.popup .notice_btn input {
+    color: #0c0c0c;
+}
+@media (max-width: 1440px) {
+    /* 섹션1 축제소개 컨텐츠 및 포스터 섹션 */
+    .sec_wrap.sec1_festival {
+        justify-content: center;
+    }
+    /* swiper */
+    .fes_info_cont_wrap {
+        position: relative;
+        margin-top: 50px;
+    }
+    .fes_info_cont_wrap .swiper-slide > div {
+        width: 100%;
+    }
+    .fes_info_cont_wrap .swiper-slide > div:nth-child(2) {
+        margin-top: 50px;
+    }
+
+    .f_i_prev {
+        transform: translateX(-150%) scale(0.6) rotate(180deg);
+    }
+    .f_i_next {
+        transform: translateX(150%) scale(0.6);
+    }
+
+    /* 왼쪽 포스터 내용 */
+    .festival .sec1_cont {
+        padding-top: 30px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: baseline;
+    }
+
+    .festival .sec1_cont_line {
+        display: none;
+    }
+
+    /* 오른쪽 포스터 */
+
+    .festival .poster_img {
+        width: 100%;
+        height: 0;
+        padding-top: 77.014%;
+        background-image: url(../img/main_sec3.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    /* 모바일 플러스 버튼 */
+    .festival .cate_more {
+        display: flex;
+    }
+
+    .festival .sec1_cont_maintxt {
+        display: none;
+    }
+
+    /* 섹션3 축제위치 섹션 */
+
+    /* .fes_loca_cont_wrap {
+        padding: 0 50px;
+        box-sizing: border-box;
+    } */
+    .fes_loca_map {
+        width: 100%;
+    }
+
+    .fes_location_info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+
+    .fes_location_info > li {
+        padding-top: 25px;
+        box-sizing: border-box;
+    }
+
+    .fes_location_info > li > h4 {
+        margin: 0;
+        width: fit-content;
+        text-align: center;
+    }
+}
+
+@media (max-width: 800px) {
+    .sub_cate + h4 {
+        width: calc(100% - 115px);
+        color: #f3f2ee;
+    }
+    .sub_cate + p {
+        width: calc(100% - 115px);
+        color: #0c0c0c;
+    }
+    .select_box {
+        width: calc(100% - 115px);
+        height: 40px;
+    }
+    .select4 {
+        margin: 20px auto;
+        width: 100%;
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 600px) {
+    /* .festival {
+        display: none;
+    } */
+    /* 섹션1 축제소개 컨텐츠 및 포스터 섹션 */
+    .festival .m_plus_wrap > img {
+        width: 32px;
+        height: 32px;
+    }
+
+    /* <!-- 섹션 2 축제 프로그램 안내 --> */
+    .festival .subTitle {
+        gap: 10px;
+    }
+
+    .f_i_contxt {
+        display: none;
+    }
+
+    .m_f_i_contxt {
+        display: block;
+        width: calc(100% - 115px);
+        color: #f3f2ee;
+    }
+
+    .fes_info_bg {
+        height: 300px;
+        box-sizing: border-box;
+    }
+
+    .fes_info_swi_btn_wrap {
+        top: 150px;
+        transform: translateY(-25%);
+    }
+
+    .fes_info_swi_btn_wrap > div > img {
+        width: 15px;
+    }
+
+    /* 섹션3 축제위치 섹션 */
+
+    .fes_loca_cont_wrap {
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .fes_location_info > li {
+        display: flex;
+    }
+
+    .fes_center_line_wrap {
+        padding-top: 0 !important;
+    }
+
+    .fes_location_info > li > p {
+        margin: 0;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+
+    .fes_center_line {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    /* 섹션1 축제소개 컨텐츠 및 포스터 섹션 */
+    .festival .m_sec1_cont_maintxt.m_sec1_cont_maintxt_on {
+        height: 350px;
+        opacity: 1;
+    }
+    .fes_location_info > li > p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 375px) {
+    /* <!-- 섹션 2 축제 프로그램 안내 --> */
+    .festival .subTitle {
+        gap: 5px;
+    }
+
+    .fes_info_bg {
+        height: 150px;
+        box-sizing: border-box;
+    }
+
+    .fes_info_swi_btn_wrap {
+        top: 75px;
+        transform: translateY(-25%);
+    }
+
+    /* 섹션3 축제위치 섹션 */
+
+    /* .fes_location_info > li > p {
+        font-size: 10px;
+    } */
+}
