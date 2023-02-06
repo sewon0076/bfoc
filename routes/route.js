@@ -176,7 +176,7 @@ router.post("/w_event", upload.single("eventimg"), (req, res) => {
     let category = param["category"];
     let title = param["title"];
     let content = param["content"];
-    let eventimg = "uploads/" + req.file.filename;
+    let eventimg = "img/" + req.file.filename;
     db.insertIntoEvent(writer, pw, category, title, content, eventimg, () => {
         res.redirect("/event");
     });
@@ -211,7 +211,7 @@ router.post("/modify_e", upload.single("eventimg"), (req, res) => {
     let category = param["category"];
     let title = param["title"];
     let content = param["content"];
-    let eventimg = "uploads/" + req.file.filename;
+    let eventimg = "img/" + req.file.filename;
     db.updateEvent(id, writer, pw, category, title, content, eventimg, () => {
         res.redirect("/event");
     });
