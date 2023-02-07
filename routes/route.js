@@ -176,7 +176,7 @@ router.post("/w_event", upload.single("eventimg"), (req, res) => {
     let category = param["category"];
     let title = param["title"];
     let content = param["content"];
-    let eventimg = "img/" + req.file.filename;
+    let eventimg = "uploads/" + req.file.filename;
     db.insertIntoEvent(writer, pw, category, title, content, eventimg, () => {
         res.redirect("/event");
     });
