@@ -143,13 +143,13 @@ function insertIntoEvent(writer, pw, category, title, content, eventimg, callbac
 // 이벤트 테이블에서 데이터 가져오는 함수
 function getEvent(callback) {
     connection.query(
-        `select * from eventtable where category ='부산항 축제';` +
-            `select * from eventtable where category ='유채꽃 축제';` +
-            `select * from eventtable where category ='부산 불꽃 축제';` +
-            `select * from eventtable where category ='국제 록 페스티벌';` +
-            `select * from eventtable where category ='부산 바다축제';` +
-            `select * from eventtable where category ='골목길 축제';` +
-            `select * from eventtable where category ='시민의 종 타종식';`,
+        `select * from eventtable where category ='부산항 축제' order by id desc;` +
+            `select * from eventtable where category ='유채꽃 축제' order by id desc;` +
+            `select * from eventtable where category ='부산 불꽃 축제' order by id desc;` +
+            `select * from eventtable where category ='국제 록 페스티벌' order by id desc;` +
+            `select * from eventtable where category ='부산 바다축제' order by id desc;` +
+            `select * from eventtable where category ='골목길 축제' order by id desc;` +
+            `select * from eventtable where category ='시민의 종 타종식' order by id desc;`,
         (err, rows) => {
             if (err) throw err;
             let havors = rows[0];
